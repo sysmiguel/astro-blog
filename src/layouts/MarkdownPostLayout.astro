@@ -11,11 +11,11 @@ const { frontmatter } = Astro.props;
 	<img src={frontmatter.image.url} width="300" alt={frontmatter.image.alt} />
 
 
-  <div class="tags">
-    {frontmatter.tags.map((tag: string) => (
-      <p class="tag"><a href={`/tags/${tag}`}>{tag}</a></p>
-    ))}
-  </div>
+  <!-- <div class="tags"> -->
+  <!--   {frontmatter.tags.map((tag: string) => ( -->
+  <!--     <p class="tag"><a href={`/tags/${tag}`}>{tag}</a></p> -->
+  <!--   ))} -->
+  <!-- </div> -->
 
 	<slot />
 </BaseLayout>
